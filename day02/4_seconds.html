@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<pre>
+    <input/>
+    <div id="down"></div>
+</pre>
+<script>
+   var birthday=new Date(prompt("请输入生日","1993-10-10"));
+   var deathday=birthday.setFullYear(birthday.getFullYear()+80);
+    sec=Math.round(deathday-birthday.getTime());
+   console.log(birthday.getTime(),deathday);
+//    var inp=document.getElementsByTagName('input')[0];
+//    console.log(inp);
+//    inp.onblur=function(){
+
+//       var date=inp.value;
+//        var year=date.slice(0,4);
+//        var month=date.;
+//        var d=date.getDate();
+//        year+""
+
+//    }
+
+</script>
+</body>
+</html>

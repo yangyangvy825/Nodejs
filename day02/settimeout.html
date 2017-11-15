@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onload="showtime()">
+<div id="time"></div>
+<script>
+    function showtime(){
+        let date=new Date();
+        let h=date.getHours();
+        let m=date.getMinutes();
+        let s=date.getSeconds();
+        document.getElementById('time').innerHTML=h+':'+m+":"+s;
+        setTimeout('showtime()',1000);
+    }
+</script>
+</body>
+</html>

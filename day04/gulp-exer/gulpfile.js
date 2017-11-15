@@ -9,18 +9,18 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
 // 检查脚本
-gulp.task('lint', function() {
-    gulp.src('./js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
+//gulp.task('lint', function() {
+//    gulp.src('./js/*.js')
+//        .pipe(jshint())
+//        .pipe(jshint.reporter('default'));
+//});
 
 // 编译Sass
-gulp.task('sass', function() {
-    gulp.src('./sass/*.sass')
-        .pipe(sass())
-        .pipe(gulp.dest('./css'));
-});
+//gulp.task('sass', function() {
+//    gulp.src('./sass/*.sass')
+//        .pipe(sass())
+//        .pipe(gulp.dest('./css'));
+//});
 
 // 合并，压缩文件
 gulp.task('scripts', function() {
